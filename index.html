@@ -1,36 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>My BCIT Project</title>
-    <meta name="comp1800 template" content="My 1800 App">
+    <meta name="comp1800 template" content="My 1800 App" />
 
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Other libraries go here -->
 
     <!-- Link to styles of your own -->
-    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!------------------------------>
     <!-- Your HTML Layout go here -->
+
     <!------------------------------>
     <!-- Stuff for body goes here -->
+    <nav class="navbar navbar-expand-lg bg-success-subtle">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" height="36" />
+          Meiqi's Online Plant Store
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Supplies</a></li>
+                <li><a class="dropdown-item" href="#">Customer Service</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--Jumbotron Welcome Section-->
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Welcome to Meiqi's Online Plant Store</h1>
+        <p class="col-md-8 fs-4">Your journey to a greener life begins here!</p>
 
+        <button class="btn btn-success btn-lg" type="button">
+          Login/Signup
+        </button>
+
+        <!-- Add an onclick attribute to define click event handler -->
+        <!-- <button onclick="window.location.href='login.html'" class="btn btn-primary btn-lg" type="button">Login/Signup</button> -->
+      </div>
+    </div>
+    <!--Grid Section-->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img
+            src="./images/parlor.jpg"
+            class="card-img-top"
+            alt="Image of Parlor Palm"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Parlor Palm</h5>
+            <p class="card-text">
+              Parlor Palm is an excellent choice for home environments, thriving
+              in low-light conditions. Cultivated since the Victorian era, it is
+              renowned for its adaptability to indoor conditions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="./images/snake.jpg"
+            class="card-img-top"
+            alt="Image of Snake Plant"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Snake Plant</h5>
+            <p class="card-text">
+              Snake Plant, also known as Sansevieria, is a sleek and hardy
+              indoor plant. Its upright, sword-shaped leaves boast unique
+              patterns resembling snake skin, adding a touch of modern elegance
+              to any space.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="./images/red.jpg"
+            class="card-img-top"
+            alt="Image of Flamingo Flower"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Flamingo Flower</h5>
+            <p class="card-text">
+              Flamingo Flower, also known as Anthurium 'Red", is a stunning
+              tropical plant that can easily thrive indoors. With proper care,
+              the Flamingo Flower can bloom throughout the year, bringing a
+              tropical vibe to your indoor space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="#"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            aria-label="Bootstrap"
+          >
+            <svg class="bi" width="30" height="24" aria-hidden="true">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary"
+            >© 2025 Company, Inc</span
+          >
+        </div>
+      </footer>
+    </div>
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
 
     <!-- Link to scripts of your own -->
-    <!-- <script type="module" src="./src/main.js"></script> -->
-
-</body>
-
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
